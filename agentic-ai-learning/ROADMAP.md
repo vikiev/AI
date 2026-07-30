@@ -114,15 +114,26 @@ python agentic-ai-learning/code/capstone_assistant.py
 
 ## 🗺️ Learning Path Visualization
 
-```
-Module 1          Module 2         Module 3          Module 4
-THEORY     →     SETUP      →    CORE SKILLS   →   FRAMEWORKS
-(what/why)      (env/api)      (loop/tools/mem)    (SDK/project)
-                                                        │
-                                                        ▼
-Module 7          Module 6         Module 5
-CAPSTONE   ←    PRODUCTION   ←   MULTI-AGENT
-(real app)     (RAG/stream/API)   (pipeline/debate)
+```mermaid
+flowchart LR
+    M1["📚 Module 1<br/>THEORY<br/>(what/why)"]
+    M2["🛠️ Module 2<br/>SETUP<br/>(env/api)"]
+    M3["🔧 Module 3<br/>CORE SKILLS<br/>(loop/tools/mem)"]
+    M4["🧠 Module 4<br/>FRAMEWORKS<br/>(SDK/project)"]
+    M5["🤝 Module 5<br/>MULTI-AGENT<br/>(pipeline/debate)"]
+    M6["🏭 Module 6<br/>PRODUCTION<br/>(RAG/stream/API)"]
+    M7["🎓 Module 7<br/>CAPSTONE<br/>(real app)"]
+    
+    M1 --> M2 --> M3 --> M4
+    M4 --> M5 --> M6 --> M7
+    
+    style M1 fill:#e3f2fd,stroke:#1565c0,stroke-width:2px
+    style M2 fill:#e8f5e9,stroke:#388e3c,stroke-width:2px
+    style M3 fill:#fff3e0,stroke:#e65100,stroke-width:2px
+    style M4 fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
+    style M5 fill:#fce4ec,stroke:#c2185b,stroke-width:2px
+    style M6 fill:#e0f2f1,stroke:#00695c,stroke-width:2px
+    style M7 fill:#fffde7,stroke:#f9a825,stroke-width:2px
 ```
 
 ---
